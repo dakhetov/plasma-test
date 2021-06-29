@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// App.tsx
+import { useState } from 'react';
+//import styled from 'styled-components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Container } from '@sberdevices/plasma-ui/components/Grid';
+import { Button, TextField, Row, Col, Header, TextBox } from '@sberdevices/plasma-ui';
+import { IconMic } from '@sberdevices/plasma-icons';
+import { ButtonCust } from './components/Button';
 
-export default App;
+export const App = () => {
+    const [value, setValue] = useState('');
+    const [valueTextBox, setValueTextBox] = useState('');
+    
+    return (
+        <Button
+          text={'Hello Plasma'}
+          size={'m'}
+          view={'primary'}
+          pin={'square-square'}
+          contentLeft={<IconMic size="s" color="inherit" />}
+          scaleOnInteraction={true}
+          outlined={true}
+          focused={false}
+          disabled={false}
+          square={false}
+          stretch={false}
+        />
+    );
+};
