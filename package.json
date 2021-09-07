@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sberdevices/plasma-icons": "^1.5.0",
-    "@sberdevices/plasma-tokens": "^1.1.0",
-    "@sberdevices/plasma-ui": "^1.7.0",
+    "@sberdevices/plasma-core": "^1.27.2-canary.703.3885db3b2758d4849ca94b52403262d8a0573579.0",
+    "@sberdevices/plasma-tokens": "^1.12.0",
+    "@sberdevices/plasma-tokens-web": "^1.11.0",
+    "@sberdevices/plasma-ui": "^1.46.0-canary.675.10e2a4a5c80fc932c1a48c988b0102645af2864b.0",
+    "@sberdevices/plasma-web": "^1.43.1-canary.703.3885db3b2758d4849ca94b52403262d8a0573579.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
@@ -16,7 +18,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "styled-components": "^5.2.3",
+    "styled-components": "^5.3.1",
     "typescript": "^4.2.4",
     "web-vitals": "^1.1.1"
   },
@@ -45,6 +47,9 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.9"
+    "@sberdevices/plasma-icons": "^1.39.0",
+    "@types/styled-components": "^5.1.9",
+    "install": "^0.13.0",
+    "npm": "^7.20.3"
   }
 }
